@@ -9,9 +9,9 @@ proxy-providers:
     <<: *p
     url: "https://www.tiziwrops.com/api/v1/client/subscribe?token=aba5295c423e4c533dd850d5ef4aa769"
 ipv6: true
-allow-lan: true
+allow-lan: false
 mixed-port: 7890
-external-controller: 127.0.0.1:9090
+external-controller: ""
 profile:
   store-selected: true
   store-fake-ip: true
