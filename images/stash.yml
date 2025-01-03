@@ -17,6 +17,7 @@ profile:
   store-fake-ip: true
 dns:
   enable: true
+  use-hosts: true
   use-system-hosts: true
   ipv6: true
   enhanced-mode: fake-ip
