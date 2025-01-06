@@ -7,7 +7,7 @@ p: &p {type: http, interval: 360, health-check: {enable: true, url: "https://www
 proxy-providers:
   润:
     <<: *p
-    url: "https://www.tiziwrops.com/api/v1/client/subscribe?token=aba5295c423e4c533dd850d5ef4aa769"
+    url: ""
 ipv6: true
 allow-lan: false
 mixed-port: 7890
