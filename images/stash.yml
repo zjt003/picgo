@@ -88,7 +88,7 @@ rules:
 - RULE-SET,spotify_domain,Spotify
 - RULE-SET,pixiv_domain,其他
 - RULE-SET,geolocation-!cn,其他
-- GEOSITE,category-ads-all,reject
+- GEOSITE,category-ads-all,REJECT
 
 - RULE-SET,google_ip,Google
 - RULE-SET,netflix_ip,NETFLIX
