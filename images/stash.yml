@@ -66,14 +66,14 @@ sniffer:
 tun:
   enable: true
   stack: mixed
-  mtu: 9000
   auto-route: true
-  auto-redirect: true
+  auto-redirect: false
   auto-detect-interface: true
-  strict-route: true
   dns-hijack:
     - any:53
-    - tcp://any:53
+  route-exclude-address: []
+  mtu: 9000
+  strict-route: true
 
 proxies:
 - name: "直连"
