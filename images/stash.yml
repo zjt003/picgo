@@ -45,6 +45,24 @@ dns:
     - https://120.53.53.53/dns-query
 sniffer:
   enable: true
+  parse-pure-ip: true
+  force-dns-mapping: true
+  override-destination: false
+  sniff:
+    HTTP:
+      ports:
+        - 80
+        - 443
+      override-destination: false
+    TLS:
+      ports:
+        - 443
+    QUIC:
+      ports:
+        - 443
+  skip-domain:
+    - +.push.apple.com
+  force-domain: []
 tun:
   enable: true
   stack: mixed
