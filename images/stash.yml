@@ -8,6 +8,7 @@ proxy-providers:
   润:
     <<: *p
     url: ""
+    override: {additional-suffix: '[run]'}
 ipv6: true
 allow-lan: false
 mixed-port: 7890
