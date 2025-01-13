@@ -79,6 +79,7 @@ tun:
   auto-detect-interface: true
   dns-hijack:
     - any:53
+    - tcp://any:53
   route-exclude-address: []
   mtu: 9000
   strict-route: true
