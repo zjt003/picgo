@@ -53,13 +53,13 @@ sniffer:
   enable: true
   parse-pure-ip: true
   force-dns-mapping: true
-  override-destination: true
+  override-destination: false
   sniff:
     HTTP:
       ports:
         - 80
         - 443
-      override-destination: true
+      override-destination: false
     TLS:
       ports:
         - 443
