@@ -8,6 +8,7 @@ proxy-providers:
   润:
     <<: *p
     url: ""
+    # 为节点增加固定前缀
     override: {additional-suffix: '[run]'}
 ipv6: true
 allow-lan: false
