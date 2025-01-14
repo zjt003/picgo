@@ -117,7 +117,8 @@ proxy-groups:
 - {name: 新加坡自动选择,type: url-test, include-all: true, filter: "(?i)(新|sg|singapore)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/SG.png"}
 
 rules:
-- GEOIP,lan,直连,no-resolve
+- GEOIP,private,直连,no-resolve
+- GEOSITE,category-ads-all,REJECT
 - RULE-SET,biliintl_domain,哔哩东南亚
 - RULE-SET,ehentai_domain,ehentai
 - RULE-SET,github_domain,其他
@@ -131,7 +132,6 @@ rules:
 - RULE-SET,spotify_domain,Spotify
 - RULE-SET,pixiv_domain,其他
 - RULE-SET,geolocation-!cn,其他
-- GEOSITE,category-ads-all,REJECT
 
 - RULE-SET,google_ip,Google
 - RULE-SET,netflix_ip,NETFLIX
