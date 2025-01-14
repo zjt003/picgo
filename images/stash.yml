@@ -117,8 +117,9 @@ proxy-groups:
 - {name: 新加坡自动选择,type: url-test, include-all: true, filter: "(?i)(新|sg|singapore)", icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/SG.png"}
 
 rules:
-- GEOIP,private,直连,no-resolve
 - GEOSITE,category-ads-all,REJECT
+- RULE-SET,private_ip,直连,no-resolve
+- RULE-SET,private_domain,直连,no-resolve
 - RULE-SET,biliintl_domain,哔哩东南亚
 - RULE-SET,ehentai_domain,ehentai
 - RULE-SET,github_domain,其他
@@ -145,7 +146,7 @@ rule-anchor:
   ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: text}
   domain: &domain {type: http, interval: 86400, behavior: domain, format: text}
 rule-providers:
-  private:
+  private_domain:
     <<: *domain
     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.list"
   cn_domain:
@@ -194,6 +195,9 @@ rule-providers:
     <<: *domain
     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.list"
 
+  private_ip:
+    <<: *ip
+    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.list"
   cn_ip:
     <<: *ip
     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.list"
