@@ -39,13 +39,13 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
     - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
+    - https://dns.cloudflare.com/dns-query
   direct-nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   proxy-server-nameserver:
-    - 8.8.8.8
-    - 1.1.1.1
+    - dns.google
+    - dns.cloudflare.com
 sniffer:
   enable: true
   parse-pure-ip: true
