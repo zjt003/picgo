@@ -1,0 +1,5 @@
+windows:
+certUtil -hashfile path\to\your\file.pkg SHA256
+
+macos or linux:
+shasum -a 256 path/to/your/file.pkg
