@@ -55,14 +55,16 @@ sniffer:
     HTTP:
       ports:
         - 80
-        - 443
-      override-destination: false
+        - 8180-8880
+      override-destination: true
     TLS:
       ports:
         - 443
+        - 8443
     QUIC:
       ports:
         - 443
+        - 8443
   skip-domain:
     - +.push.apple.com
   force-domain: []
