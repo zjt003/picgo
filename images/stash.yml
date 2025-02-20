@@ -120,7 +120,6 @@ proxy-groups:
 
 rules:
 - GEOSITE,category-ads-all,REJECT
-- RULE-SET,AWAvenue-Ads-Rule-Clash,REJECT
 - RULE-SET,private_ip,直连,no-resolve
 - RULE-SET,private_domain,直连,no-resolve
 - RULE-SET,biliintl_domain,哔哩东南亚
@@ -197,9 +196,6 @@ rule-providers:
   category-ads-all:
     <<: *domain
     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.list"
-  AWAvenue-Ads-Rule-Clash:
-    <<: *domain
-    url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main//Filters/AWAvenue-Ads-Rule-Clash.yaml"
 
   private_ip:
     <<: *ip
