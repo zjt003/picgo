@@ -120,6 +120,7 @@ proxy-groups:
 
 rules:
 - GEOSITE,category-ads-all,REJECT
+- RULE-SET,anti-AD,REJECT
 - RULE-SET,private_ip,直连,no-resolve
 - RULE-SET,private_domain,直连,no-resolve
 - RULE-SET,biliintl_domain,哔哩东南亚
@@ -196,6 +197,9 @@ rule-providers:
   category-ads-all:
     <<: *domain
     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ads-all.mrs"
+  anti-AD:
+    <<: *domain
+    url: "https://raw.githubusercontent.com/privacy-protection-tools/anti-ad.github.io/master/docs/mihomo.mrs"
 
   private_ip:
     <<: *ip
