@@ -140,6 +140,7 @@ rules:
 - GEOSITE,category-ads-all,REJECT
 - RULE-SET,anti-AD,REJECT
 - RULE-SET,private_ip,直连,no-resolve
+#域名
 - RULE-SET,private_domain,直连,no-resolve
 - RULE-SET,biliintl_domain,哔哩东南亚
 - RULE-SET,ehentai_domain,ehentai
@@ -154,7 +155,7 @@ rules:
 - RULE-SET,spotify_domain,Spotify
 - RULE-SET,pixiv_domain,其他
 - RULE-SET,geolocation-!cn,其他
-
+#IP
 - RULE-SET,google_ip,Google
 - RULE-SET,netflix_ip,NETFLIX
 - RULE-SET,telegram_ip,Telegram
