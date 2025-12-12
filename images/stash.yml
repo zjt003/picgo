@@ -65,6 +65,19 @@ dns:
   proxy-server-nameserver:
     - dns.google
     - dns.cloudflare.com
+  fallback:
+    - tls://8.8.8.8
+    - tls://1.1.1.1
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+    domain:
+      - '+.google.com'
+      - '+.facebook.com'
+      - '+.youtube.com'
 sniffer:
   enable: true
   parse-pure-ip: true
