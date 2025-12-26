@@ -65,8 +65,8 @@ dns:
     - dns.google
     - one.one.one.one
   fallback:
-    - tls://8.8.8.8
-    - tls://1.1.1.1
+    - dns.google
+    - one.one.one.one
   fallback-filter:
     geoip: true
     geoip-code: CN
