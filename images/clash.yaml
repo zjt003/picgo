@@ -1,7 +1,7 @@
 # 策略组相关
-pr: &pr {输入: select， proxies: [默认, 香港, 香港自动选择, 台湾, 台湾自动选择, 日本, 日本自动选择, 新加坡, 新加坡自动选择, 美国, 美国自动选择,英国, 英国自动选择, 其它地区, 全部节点, 自动选择, 直连]}
+pr: &pr {type: select, proxies: [默认, 香港, 香港自动选择, 台湾, 台湾自动选择, 日本, 日本自动选择, 新加坡, 新加坡自动选择, 美国, 美国自动选择,英国, 英国自动选择, 其它地区, 全部节点, 自动选择, 直连]}
 #这里是订阅更新和延迟测试相关的
-p: &p {输入: http, interval: 3600， health-check: {enable: true, url: "https://www.gstatic.com/generate_204"， interval: 300}}
+p: &p {type: http, interval: 3600, health-check: {enable: true, url: "https://www.gstatic.com/generate_204", interval: 300}}
 
 # url 里填写自己的订阅,名称不能重复
 proxy-providers:
@@ -110,7 +110,7 @@ tun:
 
 proxies:
 - name: "直连"
-  输入: direct
+  type: direct
   udp: true
 proxy-groups:
 - {name: 默认, type: select, proxies: [自动选择, 直连, 香港, 香港自动选择, 台湾, 台湾自动选择, 日本, 日本自动选择, 新加坡, 新加坡自动选择, 美国, 美国自动选择,英国, 英国自动选择, 其它地区, 全部节点], icon: "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/mini/Proxy.png"}
