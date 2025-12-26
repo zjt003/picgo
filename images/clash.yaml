@@ -57,13 +57,13 @@ dns:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
     - https://dns.google/dns-query
-    - https://dns.cloudflare.com/dns-query
+    - https://cloudflare-dns.com/dns-query
   direct-nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   proxy-server-nameserver:
     - dns.google
-    - dns.cloudflare.com
+    - one.one.one.one
   fallback:
     - tls://8.8.8.8
     - tls://1.1.1.1
