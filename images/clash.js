@@ -39,7 +39,7 @@ const config = {
     "润": {
       ...p,
       url: "", // 请在此处填写订阅链接
-      override: { "additional-suffix": "[run]" }
+      override: { "additional-suffix": "[run]" }// 覆盖节点内容(additional-suffix在节点名称后增加固定后缀 additional-prefix在节点名称前增加固定前缀)
     }
   },
   ipv6: true,
